@@ -7,7 +7,7 @@ def main():
     image = Image.open(inPath)
     if image.mode != 'RGBA':
         image = image.convert('RGBA')
-    changeColor(image, outPath)
+    changeColor(image, inPath)
 
 def changeColor(image, inPath):
     pixels = image.load()
