@@ -15,8 +15,10 @@ def changeColor(image, inPath):
         for col in range(image.size[1]):
             if pixels[row, col] != (255, 255, 255, 255): #if not total white
                 pixels[row, col] = (0, 0, 0, 0) #change to transparent
-    print "Hello"
+    print "Saving Image"
     image.save(inPath + "trans.png")
+    print "Image saved at " + inPath + "trans.png"
+    main()
 
 if  __name__ =='__main__':
     main()
